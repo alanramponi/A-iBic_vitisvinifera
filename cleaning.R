@@ -22,19 +22,19 @@ dataset_metadata <- read.delim(pathname_metadata, na.strings="NaN", header=FALSE
 # VARIABLES DEFINITIONS
 observations <- dim(dataset)[1]   # 29090 samples
 features <- dim(dataset)[2]       #  1567 features
-nan_distr_genes <- numeric()      # vector that store the number of m.v. for each gene
-nan_distr_genes_ord <- numeric()  # vector (ord ASC) that store the number of m.v. for each gene 
+nan_distr_genes <- numeric()      # vector that stores the number of m.v. for each gene
+nan_distr_genes_ord <- numeric()  # vector (ord ASC) that stores the number of m.v. for each gene 
 nan_distr_genes_cleaned <- numeric()
 nan_distr_genes_cleaned_ord <- numeric()
 nan_distr_genes_cleaned_final <- numeric()
 nan_distr_genes_cleaned_final_ord <- numeric()
-nan_distr_features <- numeric()   # vector that store the number of m.v. for each experiment
+nan_distr_features <- numeric()   # vector that stores the number of m.v. for each experiment
 nan_distr_features_ord <- numeric()
 nan_distr_features_after <- numeric()
 nan_distr_features_after_ord <- numeric()
 nan_distr_features_cleaned <- numeric()
 nan_distr_features_cleaned_ord <- numeric()
-genes_to_keep <- logical()        # vector that store the bool result of a condition for each gene
+genes_to_keep <- logical()        # vector that stores the bool result of a condition for each gene
 experiments_to_keep <- logical()
 
 ###################################################################################################
